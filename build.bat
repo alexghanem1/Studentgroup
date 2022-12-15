@@ -1,0 +1,1 @@
+mvn package && cd target\\dependency && jar -xf ../*.jar
