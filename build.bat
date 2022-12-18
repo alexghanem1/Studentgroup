@@ -1,1 +1,1 @@
-mvn package && (if not exist "target\\dependency" mkdir target\\dependency) cd target\\dependency && jar -xf ../*.jar
+mvn package && (if not exist "target\\dependency" mkdir target\\dependency) && cd target\\dependency && jar -xf ../*.jar
