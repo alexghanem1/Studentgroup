@@ -1,1 +1,1 @@
-docker run -p 8081:8081 student-service
+docker run -p 8089:8089 student-service
