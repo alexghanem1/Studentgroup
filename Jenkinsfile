@@ -5,13 +5,15 @@ pipeline {
         '
         jar = 'C:\\Program Files\\Java\\jdk-17.0.5\\bin'
     }
+    triggers {
+        pollSCM '* * * * *'
+    }
     stages {
         stage('Build Spring Boot App') {
             steps {
                 bat 'build.bat'
             }
         }
-        
         stage('Build Docker Image') {
             steps {
                 bat 'docker.build.bat'
